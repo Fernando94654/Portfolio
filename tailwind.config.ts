@@ -11,7 +11,8 @@ export default {
     extend: {
       fontFamily: {
         code: ["code", ...fontFamily.mono],
-        main: ["main", ...fontFamily.mono]
+        main: ["main", ...fontFamily.mono],
+        Test: ["test", ...fontFamily.mono],
       },
       colors: {
           secondary: "#f5741c",
@@ -21,5 +22,6 @@ export default {
   },
   plugins: [
     require('tailwind-scrollbar-hide'),
+    require('tailwind-scrollbar'),
   ],
 } satisfies Config;

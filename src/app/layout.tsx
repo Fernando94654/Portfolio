@@ -2,6 +2,9 @@ import type { Metadata} from "next";
 import { Urbanist } from "next/font/google";
 import '../styles/globals.css';
 import NavBar from "./_components/navbar";
+import Footer from "./_components/footer";
+import { Toaster } from "react-hot-toast";
+
 const urbanist = Urbanist({subsets: ["latin"]});
 
 export const metadata: Metadata = {
@@ -14,10 +17,11 @@ function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html>
-        {/* <body  className=' bg-gray-950 text-white font-main antialiased'> */}
         <body  className=' bg-gradient-to-r from-purple-950 via-blue-950 to-sky-950 text-white font-main antialiased'>
           <NavBar />
             {children}
+          <Footer/>
+          <Toaster/>
         </body>
     </html>
   );
