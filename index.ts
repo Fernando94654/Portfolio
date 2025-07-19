@@ -1,17 +1,17 @@
-import { PrismaClient } from "@prisma/client";
+import { PrismaClient } from '@prisma/client';
 
-export const prisma = new PrismaClient()
+export const prisma = new PrismaClient();
 
 async function main() {
     const newUser = await prisma.user.create({
         data: {
-            name: "Ryan",
-            email: "fernando@gmail.com"
-        }
-    })
+            name: 'Fernando Hernandez Cantu',
+            email: 'fernando_hdz_cantu@hotmail.com',
+        },
+    });
     console.log(newUser);
 }
 
 main()
-  .catch((e) => console.error(e))
-  .finally(() => prisma.$disconnect());
+    .catch((e) => console.error(e))
+    .finally(() => prisma.$disconnect());
