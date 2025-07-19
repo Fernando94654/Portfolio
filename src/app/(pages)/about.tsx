@@ -14,13 +14,13 @@ const About = () => {
                 </h2>
                 <div className="bg-slate-900 mx-6 lg:mx-56 rounded-lg">
                     <p className="p-7 text-justify text-lg">
-                        I'm a software engineer, student of Robotics and Digital
-                        Systems Engineering, and Mechatronics Technician. I like
-                        computer vision, web development and robotics
-                        competitions. I enjoy combining software and hardware to
-                        create innovative solutions. I'm currently a software
-                        developer in RoBorregos (ITESM robotic representative
-                        team).
+                        I&apos;m a software engineer, student of Robotics and
+                        Digital Systems Engineering, and Mechatronics
+                        Technician. I like computer vision, web development and
+                        robotics competitions. I enjoy combining software and
+                        hardware to create innovative solutions. I&apos;m
+                        currently a software developer in RoBorregos (ITESM
+                        robotic representative team).
                     </p>
                 </div>
             </section>

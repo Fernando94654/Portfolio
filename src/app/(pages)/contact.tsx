@@ -1,8 +1,14 @@
 'use client';
-import type { FieldValues, SubmitHandler } from 'react-hook-form';
+import type { SubmitHandler } from 'react-hook-form';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
+
+interface contactData {
+    name: string;
+    email: string;
+    message: string;
+}
 
 const Contact = () => {
     const {
@@ -10,7 +16,7 @@ const Contact = () => {
         handleSubmit,
         formState: { errors },
         reset,
-    } = useForm<FieldValues>({
+    } = useForm<contactData>({
         defaultValues: {
             name: '',
             email: '',
@@ -18,7 +24,7 @@ const Contact = () => {
         },
     });
 
-    const sendEmail: SubmitHandler<FieldValues> = (data) => {
+    const sendEmail: SubmitHandler<contactData> = (data) => {
         const templateParams = {
             name: data.name,
             email: data.email,
