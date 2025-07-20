@@ -61,6 +61,7 @@ const IconGrid: React.FC<IconProps> = ({ name, list, lenght }) => {
                             key={index}
                             icon={lang.icon}
                             name={lang.name}
+                            time={lang.time}
                         />
                     ))}
                 </div>
