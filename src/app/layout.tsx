@@ -5,8 +5,9 @@ import Footer from './_components/footer';
 import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
-    title: 'Fernando Landing Page',
-    description: 'Landing page made by Fernando',
+    title: 'Fernando Hernandez Cantu Portfolio',
+    description:
+        'This portfolio website, where I share my experience and journey as a software and robotics engineer.',
 };
 
 function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
