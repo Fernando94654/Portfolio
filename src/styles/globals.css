@@ -2,32 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
 
 @font-face {
-  font-family: 'main';
-  src: url('/fonts/AncizarSans.ttf');
-  font-weight: 100 900;
-  font-style: normal;
+    font-family: 'main';
+    src: url('/fonts/AncizarSans.ttf');
+    font-weight: 100 900;
+    font-style: normal;
 }
 @font-face {
-  font-family: 'code';
-  src: url('/fonts/Montserrat.ttf');
-  font-weight: 100 900;
-  font-style: normal;
+    font-family: 'code';
+    src: url('/fonts/Montserrat.ttf');
+    font-weight: 100 900;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: 'test';
-  src: url('/fonts/ManufacturingConsent-Regular.ttf');
-  font-weight: 100 900;
-  font-style: normal;
+    font-family: 'test';
+    src: url('/fonts/ManufacturingConsent-Regular.ttf');
+    font-weight: 100 900;
+    font-style: normal;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+    .text-balance {
+        text-wrap: balance;
+    }
 }
-

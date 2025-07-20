@@ -1,29 +1,33 @@
-# Create T3 App
+# Portfolio
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+This is the code for my portfolio page, where I share my experience and journey as a software and robotics engineer.
 
-## What's next? How do I make an app with this?
+## Languages and Technologies used:
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+<img align="left" alt="TypeScript" width="30px" style="padding-right:10px;" src="https://skillicons.dev/icons?i=typescript" />
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+TypeScript
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+<img align="left" alt="React" width="30px" style="padding-right:10px;" src="https://skillicons.dev/icons?i=react" />
 
-## Learn More
+React
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+<img align="left" alt="Tailwind" width="30px" style="padding-right:10px;" src="https://skillicons.dev/icons?i=tailwind" />
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+Tailwind
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+<img align="left" alt="NextJs" width="30px" style="padding-right:10px;" src="https://skillicons.dev/icons?i=next" />
 
-## How do I deploy this?
+Next.js
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+<img align="left" alt="EmailJS" width="30px" style="padding-right:10px;" src="./public/assets/emailjs.png" />
+
+EmailJS
+
+<img align="left" alt="EmailJS" width="30px" style="padding-right:10px;" src="./public/assets/prettier.svg" />
+
+Prettier
+
+<img align="left" alt="Vercel" width="30px" style="padding-right:10px;" src="https://skillicons.dev/icons?i=vercel" />
+
+Vercel
