@@ -46,6 +46,9 @@ const Contact = () => {
             )
             .then(() => {
                 reset();
+            })
+            .catch(() => {
+                console.log('Error sendig email');
             });
     };
     return (
