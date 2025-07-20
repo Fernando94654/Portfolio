@@ -24,7 +24,7 @@ const ExpElement: React.FC<ExpElementProps> = ({
                     className="h-52 md:h-72 lg:h-full object-cover rounded-xl"
                 />
             </div>
-            <div className="lg:w-7/12 px-10 lg:p-10 lg:overflow-auto scrollbar scrollbar-thumb-slate-500 scrollbar-track-slate-800">
+            <div className="lg:w-7/12 px-10 lg:p-10 overflow-auto scrollbar scrollbar-thumb-slate-500 scrollbar-track-slate-800 mb-5">
                 <h3 className="text-3xl text-center pb-5">{title}</h3>
                 {description.map((line, index) => (
                     <p
@@ -37,7 +37,7 @@ const ExpElement: React.FC<ExpElementProps> = ({
                 <a
                     href={gitRepo}
                     target="blank"
-                    className="font-semibold hover:scale-105 hover:text-blue-800"
+                    className="font-semibold hover:scale-105 hover:text-blue-800 pb-4"
                 >
                     Git Respository
                 </a>
