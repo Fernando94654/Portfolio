@@ -44,7 +44,7 @@ const IconGrid: React.FC<IconProps> = ({ name, list, lenght }) => {
         <div>
             <h2 className="text-center text-4xl p-5 font-main">{name}</h2>
             <div className="flex items-center lg:mx-5">
-                <div className="flex h-8 min-w-8 m-2 rounded-full border-2 border-solid ">
+                <div className="flex h-6 min-w-6 sm:h-8 sm:min-w-8 m-2 mr-1 rounded-full border-2 border-solid ">
                     <button
                         onClick={() => moveScrollBar(true)}
                         className="flex h-full w-full justify-center items-center"
@@ -65,7 +65,7 @@ const IconGrid: React.FC<IconProps> = ({ name, list, lenght }) => {
                         />
                     ))}
                 </div>
-                <div className="flex h-8 min-w-8 m-2 rounded-full border-2 border-solid ">
+                <div className="flex h-6 min-w-6 sm:h-8 sm:min-w-8 m-2 ml-1 rounded-full border-2 border-solid ">
                     <button
                         onClick={() => moveScrollBar(false)}
                         className="flex h-full w-full justify-center items-center"
