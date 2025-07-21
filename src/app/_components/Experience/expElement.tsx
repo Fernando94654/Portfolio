@@ -29,7 +29,7 @@ const ExpElement: React.FC<ExpElementProps> = ({
                 {description.map((line, index) => (
                     <p
                         key={index}
-                        className={`whitespace-pre-line leading-10 text-lg ${index === 0 ? 'font-semibold' : ''}`}
+                        className={`whitespace-pre-line sm:leading-9 leading-7 text-base sm:text-lg ${index === 0 ? 'font-semibold' : ''}`}
                     >
                         {line}
                     </p>

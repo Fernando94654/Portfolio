@@ -1,7 +1,8 @@
 import Image from 'next/image';
-const NavBar = () => {
+
+const DesktopBar = () => {
     return (
-        <div className="fixed opacity-95  backdrop-blur-sm drop-shadow-sm flex justify-end items-center text-base lg:text-xl p-4 gap-x-3 lg:gap-x-12 border-b-2 border-blue-100 z-10 w-full h-16 font-code font-semibold">
+        <div className="invisible sm:visible fixed opacity-95  backdrop-blur-sm drop-shadow-sm flex justify-end items-center text-base lg:text-xl p-4 gap-x-3 lg:gap-x-12 border-b-2 border-blue-100 z-10 w-full h-16 font-code font-semibold">
             <div className=" w-full items-start lg:ml-16 min-w-14">
                 <a href="#Intro">
                     <Image
@@ -49,4 +50,4 @@ const NavBar = () => {
     );
 };
 
-export default NavBar;
+export default DesktopBar;

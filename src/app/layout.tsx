@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import '../styles/globals.css';
-import NavBar from './_components/navbar';
+import NavBar from './_components/Nav/navbar';
 import Footer from './_components/footer';
 import { Toaster } from 'react-hot-toast';
 
