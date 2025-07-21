@@ -4,7 +4,7 @@ import React from 'react';
 
 const Info = () => {
     return (
-        <div className="flex gap-3 text-2xl p-4 text-cyan-100 items-center">
+        <div className="flex gap-3 text-2xl py-4 text-cyan-100 items-center">
             <a href="/Resume.pdf" target="blank">
                 <div className="flex items-center justify-center w-20 h-8 bg-cyan-100 rounded-full text-slate-700 font-bold text-xl hover:bg-cyan-200">
                     Resume

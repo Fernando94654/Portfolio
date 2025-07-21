@@ -11,7 +11,7 @@ const Experience = () => {
     return (
         <section id="Experience" className="w-auto h-[95vh] my-20 font-code">
             <h2 className="text-center text-4xl py-5 font-main">Experience</h2>
-            <div className="flex items-center justify-between lg:mx-28 mx-3 bg-slate-950 my-3 px-16 py-2 rounded-md text-lg font-semibold">
+            <div className="flex items-center justify-between lg:mx-28 mx-3 bg-slate-950 my-3 px-6 py-2 rounded-md text-lg font-semibold">
                 {arra.map((lang, index) => (
                     <button
                         key={index}

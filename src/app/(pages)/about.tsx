@@ -13,8 +13,8 @@ const About = () => {
                     About
                 </h2>
                 <div className="bg-slate-900 mx-6 lg:mx-56 rounded-lg">
-                    <p className="p-7 text-justify text-lg">
-                        I&apos;m a software engineer, student of Robotics and
+                    <p className="p-7 text-justify text-base sm:text-lg">
+                        I&apos;m a software developer, student of Robotics and
                         Digital Systems Engineering, and Mechatronics
                         Technician. I like computer vision, web development and
                         robotics competitions. I enjoy combining software and
