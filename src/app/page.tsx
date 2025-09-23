@@ -1,15 +1,17 @@
 import React from 'react';
 import Intro from './(pages)/intro';
 import About from './(pages)/about';
-import Experience from './(pages)/experience';
+import Projects from './(pages)/workExperience';
 import Contact from './(pages)/contact';
+import WorkExperience from './(pages)/projects';
 
 const Home = () => {
     return (
         <main>
             <Intro />
             <About />
-            <Experience />
+            <WorkExperience />
+            <Projects />
             <Contact />
         </main>
     );

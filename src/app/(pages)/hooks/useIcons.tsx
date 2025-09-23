@@ -1,10 +1,15 @@
+
 export const pLanguages = [
     {
         icon: '/assets/Languages/Python_logo.png',
         name: 'Python',
         time: '2 years',
     },
-    { icon: '/assets/Languages/c.svg', name: 'C++', time: '3 years' },
+    {
+        icon: '/assets/Languages/c.svg',
+        name: 'C++',
+        time: '3 years',
+    },
     {
         icon: '/assets/Languages/Typescript_logo.svg.png',
         name: 'Typescript',
@@ -16,26 +21,101 @@ export const pLanguages = [
         time: '1 year',
     },
     {
+        icon: '/assets/Languages/Sql_logo.png',
+        name: 'SQL',
+        time: '1 year',
+    },
+    {
         icon: '/assets/Languages/Matlab_logo.png',
         name: 'Matlab',
         time: '1 year',
     },
-    { icon: '/assets/Languages/R_logo.svg', name: 'R', time: '1 year' },
+    {
+        icon: '/assets/Languages/R_logo.svg',
+        name: 'R',
+        time: '1 year',
+    },
 ];
 
 export const pTechnologies = [
-    { icon: '/assets/Technologies/Docker.png', name: 'Docker', time: '' },
-    { icon: '/assets/Technologies/ROS2.png', name: 'ROS2', time: '' },
-    { icon: '/assets/Technologies/Git.png', name: 'Git', time: '' },
-    { icon: '/assets/Technologies/React.png', name: 'React', time: '' },
-    { icon: '/assets/Technologies/Tailwind.png', name: 'Tailwind', time: '' },
-    { icon: '/assets/Technologies/Arduino.svg', name: 'Arduino', time: '' },
-    { icon: '/assets/Technologies/HTML.png', name: 'HTML', time: '' },
-    { icon: '/assets/Technologies/CSS.png', name: 'CSS', time: '' },
-    { icon: '/assets/Technologies/OpenCV.png', name: 'OpenCV', time: '' },
+    {
+        icon: '/assets/Technologies/Docker.png',
+        name: 'Docker',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/ROS2.png',
+        name: 'ROS2',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/Git.png',
+        name: 'Git',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/React.png',
+        name: 'React',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/Tailwind.png',
+        name: 'Tailwind',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/Prisma.png',
+        name: 'Prisma',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/Vercel.png',
+        name: 'Vercel',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/PostgreSQL.svg',
+        name: 'PostgreSQL',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/MySQL.svg',
+        name: 'MySQL',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/tRPC.svg',
+        name: 'tRPC',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/Arduino.svg',
+        name: 'Arduino',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/HTML.png',
+        name: 'HTML',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/CSS.png',
+        name: 'CSS',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/OpenCV.png',
+        name: 'OpenCV',
+        time: '',
+    },
     {
         icon: '/assets/Technologies/Tensorflow.svg',
         name: 'Tensorflow',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/Pytorch.svg',
+        name: 'Pytorch',
         time: '',
     },
     {

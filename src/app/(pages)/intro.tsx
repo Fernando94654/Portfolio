@@ -14,5 +14,4 @@ const Intro = () => {
         </section>
     );
 };
-// bg-[url(/backGroudHome.jpg)
 export default Intro;

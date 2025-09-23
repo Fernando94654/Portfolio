@@ -14,13 +14,13 @@ const About = () => {
                 </h2>
                 <div className="bg-slate-900 mx-6 lg:mx-56 rounded-lg">
                     <p className="p-7 text-justify text-base sm:text-lg">
-                        I&apos;m a software developer, student of Robotics and
-                        Digital Systems Engineering, and Mechatronics
-                        Technician. I like computer vision, web development and
-                        robotics competitions. I enjoy combining software and
-                        hardware to create innovative solutions. I&apos;m
-                        currently a software developer in RoBorregos (ITESM
-                        robotic representative team).
+                        I&apos;m a software developer and a student of Robotics
+                        and Digital Systems Engineering. Passionate about web
+                        development and robotics competitions, integrating
+                        software to create innovative solutions. Currently
+                        working as a Software Engineer Intern at distritotec and
+                        as a Software Developer for RoBorregos, the ITESM
+                        robotics representative team.
                     </p>
                 </div>
             </section>
@@ -31,7 +31,7 @@ const About = () => {
                 <IconGrid
                     name={'Languages'}
                     list={pLanguages}
-                    lenght={pLanguages.length}
+                    length={pLanguages.length}
                 />
             </section>
             <section
@@ -41,7 +41,7 @@ const About = () => {
                 <IconGrid
                     name={'Technologies'}
                     list={pTechnologies}
-                    lenght={pTechnologies.length}
+                    length={pTechnologies.length}
                 />
             </section>
         </div>

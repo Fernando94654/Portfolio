@@ -40,7 +40,7 @@ const Contact = () => {
                 emailjs.send(service, template, templateParams, publicKey),
                 {
                     loading: 'Sending...',
-                    success: 'Email send',
+                    success: 'Email sent',
                     error: 'Error sending email',
                 }
             )
@@ -48,7 +48,7 @@ const Contact = () => {
                 reset();
             })
             .catch(() => {
-                console.log('Error sendig email');
+                console.log('Error sending email');
             });
     };
     return (

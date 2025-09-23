@@ -8,10 +8,10 @@ import type { IconElementProps } from './iconElement';
 interface IconProps {
     name: string;
     list: IconElementProps[];
-    lenght: number;
+    length: number;
 }
 
-const IconGrid: React.FC<IconProps> = ({ name, list, lenght }) => {
+const IconGrid: React.FC<IconProps> = ({ name, list, length }) => {
     const scrollRef = useRef<HTMLDivElement>(null);
 
     const moveScrollBar = (leftB: boolean) => {
@@ -33,8 +33,8 @@ const IconGrid: React.FC<IconProps> = ({ name, list, lenght }) => {
             } else {
                 sc.scrollBy({
                     left: leftB
-                        ? (-sc.scrollWidth / lenght) * 2
-                        : (sc.scrollWidth / lenght) * 2,
+                        ? (-sc.scrollWidth / length) * 2
+                        : (sc.scrollWidth / length) * 2,
                     behavior: 'smooth',
                 });
             }
