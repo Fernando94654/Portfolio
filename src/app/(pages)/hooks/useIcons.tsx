@@ -74,17 +74,17 @@ export const pTechnologies = [
         time: '',
     },
     {
-        icon: '/assets/Technologies/PostgreSQL.svg',
+        icon: '/assets/Technologies/postgresql.png',
         name: 'PostgreSQL',
         time: '',
     },
     {
-        icon: '/assets/Technologies/MySQL.svg',
+        icon: '/assets/Technologies/mysql.png',
         name: 'MySQL',
         time: '',
     },
     {
-        icon: '/assets/Technologies/tRPC.svg',
+        icon: '/assets/Technologies/trpc.png',
         name: 'tRPC',
         time: '',
     },
