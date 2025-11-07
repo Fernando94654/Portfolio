@@ -34,7 +34,7 @@ const ExpElement: React.FC<ExpElementProps> = ({
     pageLink,
 }) => {
     return (
-        <div className="flex flex-col lg:flex-row bg-slate-900 rounded-md w-full h-[80vh] overflow-auto">
+        <div className="flex flex-col lg:flex-row bg-slate-900 rounded-md w-full h-auto lg:h-[32rem] overflow-auto">
             <div className="relative lg:w-5/12 m-10 rounded-xl bg-slate-950">
                 <Image
                     src={img}

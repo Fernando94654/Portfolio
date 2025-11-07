@@ -52,16 +52,16 @@ const Contact = () => {
             });
     };
     return (
-        <section id="Contact" className="w-full h-[50vh] my-44 font-code">
+        <section id="Contact" className="w-full min-h-[20rem] my-6 font-code">
             <h2 className="text-center text-4xl pt-20 pb-5 font-main">
                 Contact
             </h2>
             <form
                 onSubmit={handleSubmit(sendEmail)}
                 autoComplete="off"
-                className="flex flex-col lg:flex-row items-center justify-center text-lg h-full"
+                className="flex flex-col lg:flex-row lg:items-start items-center justify-center text-lg h-full"
             >
-                <div className="flex flex-col m-2 w-3/4 lg:w-1/4 h-full">
+                <div className="flex flex-col m-2 w-3/4 lg:w-1/4 h-full justify-start">
                     <label htmlFor="name" className="pb-2 font-semibold">
                         Name:
                     </label>
@@ -94,7 +94,7 @@ const Contact = () => {
                         id="message"
                         {...register('message', { required: true })}
                         placeholder="Message"
-                        className="border-2 border-gray-900 focus:outline-none focus:border-purple-500 h-full w-full bg-gray-900 rounded-xl p-2 text-base lg:text-lg"
+                        className="border-2 border-gray-900 focus:outline-none focus:border-purple-500 h-[12rem] w-full bg-gray-900 rounded-xl p-2 text-base lg:text-lg"
                     ></textarea>
                     <input
                         type="submit"

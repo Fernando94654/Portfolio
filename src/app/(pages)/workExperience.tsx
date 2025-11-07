@@ -9,7 +9,7 @@ const WorkExperience = () => {
     return (
         <section
             id="Work Experience"
-            className="w-auto h-[95vh] my-20 font-code lg:mx-28 mx-3"
+            className="w-auto min-h-[48rem] my-20 font-code lg:mx-28 mx-3"
         >
             <h2 className="text-center text-4xl py-5 font-main">
                 Work Experience

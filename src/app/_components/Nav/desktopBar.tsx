@@ -19,7 +19,7 @@ const DesktopBar = ({ sections }: { sections: Section[] }) => {
                 <div className="text-center" key={index}>
                     <a
                         href={sec.href}
-                        className="hover:underline hover:text-blue-300"
+                        className="hover:text-blue-500"
                     >
                         {sec.name}
                     </a>
