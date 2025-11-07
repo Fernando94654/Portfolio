@@ -15,7 +15,6 @@ const Contact = () => {
     const {
         register,
         handleSubmit,
-        formState: { errors },
         reset,
     } = useForm<contactData>({
         defaultValues: {

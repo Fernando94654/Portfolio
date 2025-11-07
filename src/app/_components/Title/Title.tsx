@@ -36,7 +36,7 @@ const Title: React.FC<TitleProps> = ({
     gradient,
 }) => {
     // Use React.ElementType to avoid JSX type issues with dynamic tags
-    const Tag: React.ElementType = `h${level}` as any;
+    const Tag: React.ElementType = `h${level}`;
 
     // Default gradient for top-level titles if not explicitly set
     const useGradient = typeof gradient === 'boolean' ? gradient : level <= 2;
