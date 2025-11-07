@@ -1,6 +1,7 @@
 'use client';
 import { pExperience } from '~/app/(pages)/hooks/useExperience';
 import ExpElement from '../_components/Experience/expElement';
+import Title from '../_components/Title/Title';
 import { useEffect, useRef, useState } from 'react';
 
 const Projects = () => {
@@ -33,16 +34,18 @@ const Projects = () => {
                 }}
                 className={`w-full h-auto py-4  ${index === expState ? 'bg-slate-700' : 'hover:text-blue-800'}`}
             >
-                <h3>{pr.title}</h3>
+                <Title level={4} center={true} className="m-0 text-base">
+                    {pr.title}
+                </Title>
             </button>
         ));
 
     return (
         <section
             id="Projects"
-            className="h-[95vh] my-20 font-code lg:px-28 px-3"
+            className="lg:h-[32rem] my-20 font-code lg:px-28 px-3"
         >
-            <h2 className="text-center text-4xl py-5 font-main">Projects</h2>
+            <Title level={2}>Projects</Title>
             <div className="flex w-full h-8 rounded-md lg:hidden bg-slate-950 my-2 items-center justify-center">
                 <button
                     className="font-semibold hover:scale-105 hover:text-blue-800"
@@ -54,16 +57,16 @@ const Projects = () => {
             {menuOpen && (
                 <div
                     ref={menuRef}
-                    className="bg-slate-950 overflow-auto scrollbar-hide w-[25vw] h-auto max-h-[40vh] z-30 absolute right-1/2 translate-x-1/2 rounded-md"
+                    className="bg-slate-950 overflow-auto scrollbar-hide w-72 lg:w-1/4 h-auto max-h-96 z-30 absolute right-1/2 translate-x-1/2 rounded-md"
                 >
                     {getProyectsButtons(true)}
                 </div>
             )}
             <div className="flex w-full h-full justify-center">
-                <div className="hidden lg:flex flex-col items-center justify-center bg-slate-950 gap-1 w-[15vw] mr-10 h-[80vh]  rounded-md text-lg font-semibold ">
+                <div className="hidden lg:flex flex-col items-center justify-center bg-slate-950 gap-1 w-56 mr-10 rounded-md text-lg font-semibold ">
                     {getProyectsButtons(false)}
                 </div>
-                <div className="flex flex-1 w-[90vw]">
+                <div className="flex flex-1 w-full lg:w-11/12">
                     <ExpElement
                         img={pExperience[expState]?.img ?? ''}
                         title={pExperience[expState]?.title ?? ''}

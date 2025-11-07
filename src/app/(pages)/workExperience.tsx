@@ -1,6 +1,7 @@
 'use client';
 import { pWorkExperience } from '~/app/(pages)/hooks/useExperience';
 import ExpElement from '../_components/Experience/expElement';
+import Title from '../_components/Title/Title';
 import { useState } from 'react';
 
 const WorkExperience = () => {
@@ -9,11 +10,9 @@ const WorkExperience = () => {
     return (
         <section
             id="Work Experience"
-            className="w-auto h-[95vh] my-20 font-code lg:mx-28 mx-3"
+            className="w-auto min-h-[48rem] my-20 font-code lg:mx-28 mx-3"
         >
-            <h2 className="text-center text-4xl py-5 font-main">
-                Work Experience
-            </h2>
+            <Title level={2}>Work Experience</Title>
             <div className="flex items-center p-2 bg-slate-950 my-3 rounded-md text-lg font-semibold">
                 {pWorkExperience.map((lang, index) => (
                     <div
@@ -22,9 +21,11 @@ const WorkExperience = () => {
                     >
                         <button
                             onClick={() => setExp(index)}
-                            className={'hover:text-blue-800 w-full py-1'}
+                            className={'hover:text-blue-800 w-full py-1 hover:scale-105'}
                         >
-                            <h3>{lang.title}</h3>
+                            <Title level={3} center={true} className="m-0 text-base">
+                                {lang.title}
+                            </Title>
                         </button>
                     </div>
                 ))}
