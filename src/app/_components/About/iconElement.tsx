@@ -20,7 +20,7 @@ const IconElement: React.FC<IconElementProps> = ({ icon, name, time }) => {
             <Title level={3} className="m-0 pt-0 lg:pt-3" gradient={false}>
                 {name}
             </Title>
-            <p className="text-xs lg:text-sm font-semibold text-green-600 font-mono">
+            <p className="text-xs lg:text-sm font-semibold text-green-600 font-mono pb-2">
                 {time}
             </p>
         </div>
