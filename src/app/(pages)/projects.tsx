@@ -1,6 +1,7 @@
 'use client';
 import { pExperience } from '~/app/(pages)/hooks/useExperience';
 import ExpElement from '../_components/Experience/expElement';
+import Title from '../_components/Title/Title';
 import { useEffect, useRef, useState } from 'react';
 
 const Projects = () => {
@@ -33,7 +34,9 @@ const Projects = () => {
                 }}
                 className={`w-full h-auto py-4  ${index === expState ? 'bg-slate-700' : 'hover:text-blue-800'}`}
             >
-                <h3>{pr.title}</h3>
+                <Title level={4} center={true} className="m-0 text-base">
+                    {pr.title}
+                </Title>
             </button>
         ));
 
@@ -42,7 +45,7 @@ const Projects = () => {
             id="Projects"
             className="lg:h-[32rem] my-20 font-code lg:px-28 px-3"
         >
-            <h2 className="text-center text-4xl py-5 font-main">Projects</h2>
+            <Title level={2}>Projects</Title>
             <div className="flex w-full h-8 rounded-md lg:hidden bg-slate-950 my-2 items-center justify-center">
                 <button
                     className="font-semibold hover:scale-105 hover:text-blue-800"

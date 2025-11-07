@@ -1,5 +1,6 @@
 import React from 'react';
 import IconGrid from '../_components/About/iconGrid';
+import Title from '../_components/Title/Title';
 import { pLanguages, pTechnologies } from './hooks/useIcons';
 
 const About = () => {
@@ -9,9 +10,9 @@ const About = () => {
                 id="About"
                 className="flex flex-col h-3/4 w-full justify-center "
             >
-                <h2 className="text-center text-4xl pt-20 pb-5 font-main">
+                <Title level={2} className="pt-20 pb-5">
                     About
-                </h2>
+                </Title>
                 <div className="bg-slate-900 mx-6 lg:mx-56 rounded-lg">
                     <p className="p-7 text-justify text-base sm:text-lg">
                         I&apos;m a software developer and a student of Robotics

@@ -3,6 +3,7 @@ import React from 'react';
 import { useRef } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import IconElement from './iconElement';
+import Title from '../Title/Title';
 import type { IconElementProps } from './iconElement';
 
 interface IconProps {
@@ -42,7 +43,9 @@ const IconGrid: React.FC<IconProps> = ({ name, list, length }) => {
     };
     return (
         <div>
-            <h2 className="text-center text-4xl p-5 font-main">{name}</h2>
+            <Title level={2} className="p-5">
+                {name}
+            </Title>
             <div className="flex items-center lg:mx-5">
                 <div className="flex h-6 min-w-6 sm:h-8 sm:min-w-8 m-2 mr-1 rounded-full border-2 border-solid ">
                     <button
