@@ -78,7 +78,7 @@ const Contact = () => {
                             className="bg-slate-950 border border-slate-700 focus:ring-2 focus:ring-sky-400 focus:border-transparent rounded-md px-3 py-2 text-slate-100 transition-shadow outline-none w-full"
                         />
 
-                        <Title level={4} center={false} gradient={false} className="pt-4 pb-2 text-base lg:text-lg font-semibold text-slate-200 uppercase tracking-wider">
+                        <Title level={4} center={false} gradient={false}>
                             Email
                         </Title>
                         <input
@@ -93,7 +93,7 @@ const Contact = () => {
 
                 <div className="flex flex-col m-0 w-full lg:w-2/3">
                     <div className="p-4 rounded-xl">
-                        <Title level={4} center={false} gradient={false} className="pb-2 text-base lg:text-lg font-semibold text-slate-200 uppercase tracking-wider">
+                        <Title level={4} center={false} gradient={false}>
                             Message
                         </Title>
                         <textarea
@@ -106,7 +106,7 @@ const Contact = () => {
                         <div className="flex justify-end mt-4">
                             <button
                                 type="submit"
-                                className="inline-flex items-center gap-3 bg-gradient-to-r from-sky-400 to-indigo-500 hover:from-sky-500 hover:to-indigo-600 text-white font-semibold rounded-full px-6 py-3 shadow-lg transform hover:scale-105 transition-transform"
+                                className="inline-flex items-center gap-3 bg-gradient-to-r from-sky-400 to-indigo-500 hover:from-sky-500 hover:to-indigo-600 text-white font-semibold rounded-full px-4 py-3 shadow-lg transform hover:scale-105 transition-transform"
                             >
                                 Send Message
                             </button>

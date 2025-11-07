@@ -1,4 +1,4 @@
-import Info from '../_components/info';
+import Info from '../_components/info/info';
 import Title from '../_components/Title/Title';
 
 const Intro = () => {
