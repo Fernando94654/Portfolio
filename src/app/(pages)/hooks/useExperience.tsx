@@ -11,6 +11,17 @@ export const pExperience = [
         gitRepo: 'https://github.com/RoBorregos/home2',
     },
     {
+        img: '/assets/Experience/HackMTY.jpg',
+        title: 'HackMTY 2025',
+        description: [
+            'Project for Smart Cities Banorte challenge',
+            'Developed CoRide app, a carpooling solution to reduce traffic and pollution in Monterrey',
+            'Best security as it is between Banorte users',
+            'Using T3 stack, Leaflet for maps, and optimization algorithms for route planning',
+        ],
+        gitRepo: 'https://github.com/biweep863/hackmty2025',
+    },
+    {
         img: '/assets/Experience/Dash-tec.png',
         title: 'Dashboard-Tec',
         description: [

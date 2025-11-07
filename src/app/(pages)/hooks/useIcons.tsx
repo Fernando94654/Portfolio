@@ -89,6 +89,11 @@ export const pTechnologies = [
         time: '',
     },
     {
+        icon: '/assets/Technologies/Azure.svg',
+        name: 'Azure',
+        time: '',
+    },
+    {
         icon: '/assets/Technologies/Arduino.svg',
         name: 'Arduino',
         time: '',

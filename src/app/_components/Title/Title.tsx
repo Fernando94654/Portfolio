@@ -14,7 +14,7 @@ const sizeMap: Record<Level, string> = {
     1: 'text-6xl sm:text-7xl',
     2: 'text-4xl sm:text-5xl py-6',
     3: 'text-2xl sm:text-3xl py-2',
-    4: 'text-xl py-2',
+    4: 'text-xl px-2',
     5: 'text-lg',
     6: 'text-base',
 };

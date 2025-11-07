@@ -13,10 +13,10 @@ const About = () => {
                 <Title level={2} className="pt-20 pb-5">
                     About
                 </Title>
-                <div className="bg-slate-900 mx-6 lg:mx-56 rounded-lg">
-                    <p className="p-7 text-justify text-base sm:text-lg">
-                        I&apos;m a software developer and a student of Robotics
-                        and Digital Systems Engineering. Passionate about web
+                <div className="bg-slate-950 mx-6 lg:mx-56 rounded-lg">
+                    <p className="p-7 text-justify text-slate-300 leading-7 text-base sm:text-lg">
+                        I&apos;m a software developer and a student of computer science
+                        Engineering. Passionate about web
                         development and robotics competitions, integrating
                         software to create innovative solutions. Currently
                         working as a Software Engineer Intern at distritotec and
