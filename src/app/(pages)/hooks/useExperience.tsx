@@ -70,22 +70,23 @@ export const pExperience = [
 
 export const pWorkExperience = [
     {
+        img: '/assets/Experience/epicor.png',
+        title: 'Epicor Software',
+        description: [
+            'Software Engineering Intern',
+            'Started a SWE internship within the Eclipse ERP development team at Epicor',
+            'Working on Java-based Solar Eclipse development and web migration using Angular',
+            'Developing and integrating AI-driven features through a Python-based backend into Epicor products.',
+        ],
+    },
+    {
         img: '/assets/Experience/Oasis.jpg',
         title: 'distritotec',
         description: [
             'Software Engineering Intern',
-            'Developing a project for estimating crowd size and improving public space efficiency by studying how ITESM’s Central Park and Oasis center is used',
-            'Developing backend services using PostgreSQL, MongoDB, Docker Compose within microservices architecture;',
-            'Implementing video processing pipelines using Video-LLaMA, DeepStream, and streaming via FFmpeg codecs.',
-        ],
-    },
-    {
-        img: '/assets/Experience/SE.png',
-        title: 'Schneider Electric',
-        description: [
-            'Data Management Intern',
-            'Created a data pipeline using Python, Pandas, SQL, and Excel to validate data uploads to the PDM database (Product Data Management);',
-            'Implemented component classification into part families using the DeepSeek API and OpenAI library in Python.',
+            'Developing an end-to-end pipeline for crowd estimation and person registration at ITESM’s Central Park using YOLO and ByteTrack for multi-object tracking',
+            'Architected a PyTorch classification model utilizing ResNet18 and Attention Pooling to extract temporal embeddings for child vs. adult inference via an MLP',
+            'Building scalable backend services using PostgreSQL, PostGIS, and Docker within a microservices architecture deployed on Azure cloud infrastructure',
         ],
     },
 ];

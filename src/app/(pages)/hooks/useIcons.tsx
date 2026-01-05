@@ -26,6 +26,11 @@ export const pLanguages = [
         time: '1 year',
     },
     {
+        icon: '/assets/Languages/java.svg',
+        name: 'Java',
+        time: '1 year',
+    },
+    {
         icon: '/assets/Languages/Matlab_logo.png',
         name: 'Matlab',
         time: '1 year',
