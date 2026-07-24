@@ -3,6 +3,7 @@ import type { SubmitHandler } from 'react-hook-form';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import emailjs from '@emailjs/browser';
+import Section from '../_components/Layout/section';
 import Title from '../_components/Title/Title';
 
 interface contactData {
@@ -12,11 +13,7 @@ interface contactData {
 }
 
 const Contact = () => {
-    const {
-        register,
-        handleSubmit,
-        reset,
-    } = useForm<contactData>({
+    const { register, handleSubmit, reset } = useForm<contactData>({
         defaultValues: {
             name: '',
             email: '',
@@ -52,12 +49,10 @@ const Contact = () => {
             });
     };
     return (
-        <section id="Contact" className="w-full min-h-[20rem] my-6 font-code lg:px-28 px-3">
-            <Title level={2} className="pt-20 pb-5">
-                Contact
-            </Title>
+        <Section id="Contact" title="Contact">
             <p className="text-center text-slate-300 mb-6 text-lg">
-                I&apos;d love to hear from you, send a message and I&apos;ll get back to you soon.
+                I&apos;d love to hear from you, send a message and I&apos;ll get
+                back to you soon.
             </p>
 
             <form
@@ -66,8 +61,13 @@ const Contact = () => {
                 className="flex flex-col lg:flex-row lg:items-start items-stretch gap-6"
             >
                 <div className="flex flex-col m-0 w-full lg:w-1/3">
-                    <div className=" p-4 rounded-md">
-                        <Title level={4} center={false} gradient={false} >
+                    <div className="rounded-md">
+                        <Title
+                            level={4}
+                            center={false}
+                            gradient={false}
+                            className="px-0"
+                        >
                             Name
                         </Title>
                         <input
@@ -78,7 +78,12 @@ const Contact = () => {
                             className="bg-slate-950 border border-slate-700 focus:ring-2 focus:ring-sky-400 focus:border-transparent rounded-md px-3 py-2 text-slate-100 transition-shadow outline-none w-full"
                         />
 
-                        <Title level={4} center={false} gradient={false}>
+                        <Title
+                            level={4}
+                            center={false}
+                            gradient={false}
+                            className="px-0"
+                        >
                             Email
                         </Title>
                         <input
@@ -92,8 +97,13 @@ const Contact = () => {
                 </div>
 
                 <div className="flex flex-col m-0 w-full lg:w-2/3">
-                    <div className="p-4 rounded-xl">
-                        <Title level={4} center={false} gradient={false}>
+                    <div className="rounded-xl">
+                        <Title
+                            level={4}
+                            center={false}
+                            gradient={false}
+                            className="px-0"
+                        >
                             Message
                         </Title>
                         <textarea
@@ -114,7 +124,7 @@ const Contact = () => {
                     </div>
                 </div>
             </form>
-        </section>
+        </Section>
     );
 };
 

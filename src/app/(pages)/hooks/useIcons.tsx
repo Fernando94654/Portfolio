@@ -1,29 +1,28 @@
-
 export const pLanguages = [
-    {
-        icon: '/assets/Languages/Python_logo.png',
-        name: 'Python',
-        time: '2 years',
-    },
     {
         icon: '/assets/Languages/c.svg',
         name: 'C++',
         time: '3 years',
     },
     {
+        icon: '/assets/Languages/Python_logo.png',
+        name: 'Python',
+        time: '3 years',
+    },
+    {
         icon: '/assets/Languages/Typescript_logo.svg.png',
         name: 'Typescript',
-        time: '1 year',
+        time: '2 years',
     },
     {
         icon: '/assets/Languages/JavaScript_logo.svg',
         name: 'JavaScript',
-        time: '1 year',
+        time: '2 years',
     },
     {
         icon: '/assets/Languages/Sql_logo.png',
         name: 'SQL',
-        time: '1 year',
+        time: '2 years',
     },
     {
         icon: '/assets/Languages/java.svg',
@@ -31,13 +30,8 @@ export const pLanguages = [
         time: '1 year',
     },
     {
-        icon: '/assets/Languages/Matlab_logo.png',
-        name: 'Matlab',
-        time: '1 year',
-    },
-    {
-        icon: '/assets/Languages/R_logo.svg',
-        name: 'R',
+        icon: 'csharp',
+        name: 'C#',
         time: '1 year',
     },
 ];
@@ -59,8 +53,38 @@ export const pTechnologies = [
         time: '',
     },
     {
+        icon: 'linux',
+        name: 'Linux',
+        time: '',
+    },
+    {
         icon: '/assets/Technologies/React.png',
         name: 'React',
+        time: '',
+    },
+    {
+        icon: 'nextjs',
+        name: 'Next.js',
+        time: '',
+    },
+    {
+        icon: 'nodejs',
+        name: 'Node.js',
+        time: '',
+    },
+    {
+        icon: 'nestjs',
+        name: 'NestJS',
+        time: '',
+    },
+    {
+        icon: 'dotnet',
+        name: '.NET',
+        time: '',
+    },
+    {
+        icon: 'fastapi',
+        name: 'FastAPI',
         time: '',
     },
     {
@@ -71,6 +95,11 @@ export const pTechnologies = [
     {
         icon: '/assets/Technologies/Prisma.png',
         name: 'Prisma',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/trpc.png',
+        name: 'tRPC',
         time: '',
     },
     {
@@ -89,18 +118,33 @@ export const pTechnologies = [
         time: '',
     },
     {
-        icon: '/assets/Technologies/trpc.png',
-        name: 'tRPC',
-        time: '',
-    },
-    {
         icon: '/assets/Technologies/Azure.svg',
         name: 'Azure',
         time: '',
     },
     {
+        icon: '/assets/Technologies/OpenCV.png',
+        name: 'OpenCV',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/Pytorch.svg',
+        name: 'Pytorch',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/Tensorflow.svg',
+        name: 'Tensorflow',
+        time: '',
+    },
+    {
         icon: '/assets/Technologies/Arduino.svg',
         name: 'Arduino',
+        time: '',
+    },
+    {
+        icon: '/assets/Technologies/Solidworks.svg',
+        name: 'Solidworks',
         time: '',
     },
     {
@@ -111,26 +155,6 @@ export const pTechnologies = [
     {
         icon: '/assets/Technologies/CSS.png',
         name: 'CSS',
-        time: '',
-    },
-    {
-        icon: '/assets/Technologies/OpenCV.png',
-        name: 'OpenCV',
-        time: '',
-    },
-    {
-        icon: '/assets/Technologies/Tensorflow.svg',
-        name: 'Tensorflow',
-        time: '',
-    },
-    {
-        icon: '/assets/Technologies/Pytorch.svg',
-        name: 'Pytorch',
-        time: '',
-    },
-    {
-        icon: '/assets/Technologies/Solidworks.svg',
-        name: 'Solidworks',
         time: '',
     },
 ];

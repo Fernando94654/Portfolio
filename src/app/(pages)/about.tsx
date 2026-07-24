@@ -1,51 +1,62 @@
 import React from 'react';
 import IconGrid from '../_components/About/iconGrid';
-import Title from '../_components/Title/Title';
+import Section from '../_components/Layout/section';
 import { pLanguages, pTechnologies } from './hooks/useIcons';
+import { pEducation } from './hooks/useProfile';
 
 const About = () => {
     return (
-        <div className="font-code">
-            <section
-                id="About"
-                className="flex flex-col h-3/4 w-full justify-center "
-            >
-                <Title level={2} className="pt-20 pb-5">
-                    About
-                </Title>
-                <div className="bg-slate-950 mx-6 lg:mx-56 rounded-lg">
+        <>
+            <Section id="About" title="About">
+                <div className="bg-slate-950 rounded-lg">
                     <p className="p-7 text-justify text-slate-300 leading-7 text-base sm:text-lg">
-                        I&apos;m a software developer and a student of computer science
-                        Engineering. Passionate about web
-                        development and robotics competitions, integrating
-                        software to create innovative solutions. Currently
-                        working as a Software Engineer Intern at distritotec and
-                        as a Software Developer for RoBorregos, the ITESM
-                        robotics representative team.
+                        Computer Engineering student at ITESM who loves turning
+                        complex problems into real systems. From ML/AI pipelines
+                        at DistritoTec to ERP integrations at Epicor, web
+                        applications, and competitive robotics at RoBorregos. I
+                        build things that actually run.
                     </p>
                 </div>
-            </section>
-            <section
-                id="Languages"
-                className="flex flex-col h-3/4 w-full justify-center pt-20"
-            >
+            </Section>
+            <Section id="Education" title="Education">
+                <div className="bg-slate-950 rounded-lg p-7">
+                    {pEducation.map((ed, index) => (
+                        <div key={index}>
+                            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
+                                <h3 className="text-lg sm:text-xl font-semibold text-white">
+                                    {ed.school}
+                                </h3>
+                                <p className="text-slate-400 text-sm sm:text-base whitespace-nowrap">
+                                    {ed.period}
+                                </p>
+                            </div>
+                            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 pt-1">
+                                <p className="text-slate-300 leading-7 text-base sm:text-lg">
+                                    {ed.degree} ({ed.detail})
+                                </p>
+                                <p className="text-slate-400 text-sm sm:text-base whitespace-nowrap">
+                                    {ed.location}
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </Section>
+            <Section id="Languages" title="Languages">
                 <IconGrid
                     name={'Languages'}
                     list={pLanguages}
                     length={pLanguages.length}
                 />
-            </section>
-            <section
-                id="Technologies"
-                className="flex flex-col h-3/4 w-full justify-center pt-20"
-            >
+            </Section>
+            <Section id="Technologies" title="Technologies">
                 <IconGrid
                     name={'Technologies'}
                     list={pTechnologies}
                     length={pTechnologies.length}
                 />
-            </section>
-        </div>
+            </Section>
+        </>
     );
 };
 

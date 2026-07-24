@@ -16,10 +16,7 @@ const MobileBar = ({ sections }: { sections: Section[] }) => {
                 <div className="flex flex-col items-center gap-3 text-lg font-code pb-2">
                     {sections.map((sec, index) => (
                         <div className="text-center" key={index}>
-                            <a
-                                href={sec.href}
-                                className="hover:text-blue-500"
-                            >
+                            <a href={sec.href} className="hover:text-blue-500">
                                 {sec.name}
                             </a>
                         </div>

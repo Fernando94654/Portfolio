@@ -3,7 +3,6 @@ import React from 'react';
 import { useRef } from 'react';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import IconElement from './iconElement';
-import Title from '../Title/Title';
 import type { IconElementProps } from './iconElement';
 
 interface IconProps {
@@ -43,10 +42,7 @@ const IconGrid: React.FC<IconProps> = ({ name, list, length }) => {
     };
     return (
         <div>
-            <Title level={2} className="p-5">
-                {name}
-            </Title>
-            <div className="flex items-center lg:mx-5">
+            <div className="flex items-center">
                 <div className="flex h-6 min-w-6 sm:h-8 sm:min-w-8 m-2 mr-1 rounded-full border-2 border-solid ">
                     <button
                         onClick={() => moveScrollBar(true)}
@@ -57,7 +53,8 @@ const IconGrid: React.FC<IconProps> = ({ name, list, length }) => {
                 </div>
                 <div
                     ref={scrollRef}
-                    className="flex h-auto w-auto overflow-auto scrollbar-hide"
+                    aria-label={name}
+                    className="flex h-auto w-auto gap-4 lg:gap-10 overflow-auto scrollbar-hide"
                 >
                     {list.map((lang, index) => (
                         <IconElement

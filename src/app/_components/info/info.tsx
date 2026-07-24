@@ -1,12 +1,11 @@
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 import React from 'react';
-import Resume
- from './resume';
+import Resume from './resume';
 const Info = () => {
     return (
         <div className="flex gap-3 text-2xl py-4 items-center">
-            <Resume /> 
+            <Resume />
             <a
                 href="https://github.com/Fernando94654"
                 target="_blank"
