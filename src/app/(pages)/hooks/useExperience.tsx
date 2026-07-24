@@ -1,6 +1,6 @@
 export const pExperience = [
     {
-        img: '/assets/Experience/Home.jpg',
+        img: '/assets/Experience/Home2.jpg',
         title: 'RoboCup @Home',
         description: [
             'Vision & Manipulation Lead, RoBorregos · May 2025 – Present',
@@ -12,7 +12,7 @@ export const pExperience = [
         gitRepo: 'https://github.com/RoBorregos/home2',
     },
     {
-        img: '',
+        img: '/assets/Experience/SmartParking.jpg',
         title: 'Smart Parking IoT',
         description: [
             'Software Developer for the ITESM “Expo Ingenierías” · Sep 2025 – Dec 2025',
@@ -20,9 +20,21 @@ export const pExperience = [
             'Integrated ESP32 and ESP32-CAM sensors with a Node.js server over MQTT, persisting data to PostgreSQL via Prisma',
             'Built a real-time dashboard to monitor parking availability and live sensor data',
         ],
+        gitRepo: 'https://github.com/Fernando94654/Smart-Parking-IoT',
     },
     {
-        img: '/assets/Experience/Candidates.jpg',
+        img: '/assets/Experience/HackMTY.jpg',
+        title: 'HackMTY 2025',
+        description: [
+            'Project for Smart Cities Banorte challenge',
+            'Developed CoRide app, a carpooling solution to reduce traffic and pollution in Monterrey',
+            'Best security as it is between Banorte users',
+            'Using T3 stack, Leaflet for maps, and optimization algorithms for route planning',
+        ],
+        gitRepo: 'https://github.com/biweep863/hackmty2025',
+    },
+    {
+        img: '/assets/Experience/candidatesDash.png',
         title: 'Candidates Dashboard',
         description: [
             'Full-Stack Developer for RoBorregos Web Projects · May 2025 – Present',
@@ -54,17 +66,6 @@ export const pExperience = [
         pageLink: 'https://swe-training.roborregos.com/',
     },
     {
-        img: '/assets/Experience/HackMTY.jpg',
-        title: 'HackMTY 2025',
-        description: [
-            'Project for Smart Cities Banorte challenge',
-            'Developed CoRide app, a carpooling solution to reduce traffic and pollution in Monterrey',
-            'Best security as it is between Banorte users',
-            'Using T3 stack, Leaflet for maps, and optimization algorithms for route planning',
-        ],
-        gitRepo: 'https://github.com/biweep863/hackmty2025',
-    },
-    {
         img: '/assets/Experience/Maze.jpg',
         title: 'RoboCup Jr. Rescue Maze',
         description: [
@@ -90,7 +91,7 @@ export const pExperience = [
 
 export const pWorkExperience = [
     {
-        img: '/assets/Experience/epicor.png',
+        img: '/assets/Experience/Epicor.jpg',
         title: 'Epicor Software',
         description: [
             'Software Engineering Intern · Dec 2025 – Jun 2026',

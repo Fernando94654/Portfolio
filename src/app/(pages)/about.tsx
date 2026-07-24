@@ -1,5 +1,7 @@
 import React from 'react';
+import EducationCard from '../_components/About/educationCard';
 import IconGrid from '../_components/About/iconGrid';
+import ProfileImage from '../_components/About/profileImage';
 import Section from '../_components/Layout/section';
 import { pLanguages, pTechnologies } from './hooks/useIcons';
 import { pEducation } from './hooks/useProfile';
@@ -8,37 +10,29 @@ const About = () => {
     return (
         <>
             <Section id="About" title="About">
-                <div className="bg-slate-950 rounded-lg">
-                    <p className="p-7 text-justify text-slate-300 leading-7 text-base sm:text-lg">
-                        Computer Engineering student at ITESM who loves turning
-                        complex problems into real systems. From ML/AI pipelines
-                        at DistritoTec to ERP integrations at Epicor, web
-                        applications, and competitive robotics at RoBorregos. I
-                        build things that actually run.
-                    </p>
+                <div className="flex flex-col overflow-hidden rounded-lg border border-slate-800/80 bg-slate-950 lg:min-h-[22rem] lg:flex-row mb-6">
+                    <div className="w-full shrink-0 p-4 sm:p-4 lg:w-2/5">
+                        <ProfileImage
+                            src="/assets/me.jpg"
+                            alt="Fernando Hernandez Cantu"
+                        />
+                    </div>
+                    <div className="flex items-center">
+                        <p className="p-7 text-lg leading-8 text-slate-300 sm:text-xl">
+                            I&apos;m a Computer Engineering student at ITESM
+                            passionate about building software that solves real
+                            problems. I've worked on AI pipelines and computer
+                            vision at DistritoTec, multi-agent AI systems and
+                            ERP integrations at Epicor, and full-stack web
+                            applications. I also compete internationally in
+                            robotics with RoBorregos.
+                        </p>
+                    </div>
                 </div>
-            </Section>
-            <Section id="Education" title="Education">
-                <div className="bg-slate-950 rounded-lg p-7">
+
+                <div className="flex flex-col gap-4">
                     {pEducation.map((ed, index) => (
-                        <div key={index}>
-                            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
-                                <h3 className="text-lg sm:text-xl font-semibold text-white">
-                                    {ed.school}
-                                </h3>
-                                <p className="text-slate-400 text-sm sm:text-base whitespace-nowrap">
-                                    {ed.period}
-                                </p>
-                            </div>
-                            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1 pt-1">
-                                <p className="text-slate-300 leading-7 text-base sm:text-lg">
-                                    {ed.degree} ({ed.detail})
-                                </p>
-                                <p className="text-slate-400 text-sm sm:text-base whitespace-nowrap">
-                                    {ed.location}
-                                </p>
-                            </div>
-                        </div>
+                        <EducationCard key={index} {...ed} />
                     ))}
                 </div>
             </Section>

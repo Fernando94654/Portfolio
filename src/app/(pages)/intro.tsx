@@ -8,11 +8,11 @@ const Intro = () => {
             id="Intro"
             className="w-full h-screen relative font-main flex items-center"
         >
-            <div className={SECTION_CONTAINER}>
-                <p className="text-3xl text-start text-slate-300">
+            <div className={`${SECTION_CONTAINER} flex flex-col items-center`}>
+                <p className="text-3xl text-center text-slate-300">
                     Hi I&apos;m
                 </p>
-                <Title level={1} center={false} className="mb-2">
+                <Title level={1} className="mb-2">
                     Fernando Hernandez Cantu
                 </Title>
                 <Info />

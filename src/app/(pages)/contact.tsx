@@ -75,7 +75,7 @@ const Contact = () => {
                             id="name"
                             {...register('name', { required: true })}
                             placeholder="Your name"
-                            className="bg-slate-950 border border-slate-700 focus:ring-2 focus:ring-sky-400 focus:border-transparent rounded-md px-3 py-2 text-slate-100 transition-shadow outline-none w-full"
+                            className="bg-slate-950 border border-slate-700 focus:ring-2 focus:ring-sky-400 focus:border-transparent rounded-xl px-3 py-2 text-slate-100 transition-shadow outline-none w-full"
                         />
 
                         <Title
@@ -91,7 +91,7 @@ const Contact = () => {
                             id="email"
                             {...register('email', { required: true })}
                             placeholder="you@example.com"
-                            className="bg-slate-950 border border-slate-700 focus:ring-2 focus:ring-sky-400 focus:border-transparent rounded-md px-3 py-2 text-slate-100 transition-shadow outline-none w-full"
+                            className="bg-slate-950 border border-slate-700 focus:ring-2 focus:ring-sky-400 focus:border-transparent rounded-xl px-3 py-2 text-slate-100 transition-shadow outline-none w-full"
                         />
                     </div>
                 </div>
@@ -110,7 +110,7 @@ const Contact = () => {
                             id="message"
                             {...register('message', { required: true })}
                             placeholder="Write your message here..."
-                            className="bg-slate-950 border border-slate-700 focus:ring-2 focus:ring-sky-400 focus:border-transparent h-56 w-full rounded-md p-4 text-slate-100 resize-none transition-shadow outline-none"
+                            className="bg-slate-950 border border-slate-700 focus:ring-2 focus:ring-sky-400 focus:border-transparent h-56 w-full rounded-xl p-4 text-slate-100 resize-none transition-shadow outline-none"
                         />
 
                         <div className="flex justify-end mt-4">

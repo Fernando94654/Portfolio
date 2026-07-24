@@ -16,13 +16,41 @@ export const pEducation = [
 ];
 
 export const pAwards = [
-    '11th gen. “Líderes del Mañana” ITESM — Full Scholarship',
-    '9th Place, RoboCup@Home World Championship, Incheon, South Korea 2026',
-    '1st Place, RoboCup@Home Mexican Robotics Tournament (TMR), Puebla, Mexico 2026',
-    '2nd Place, RoboCupJr@RescueMaze Mexican Robotics Tournament (TMR), Iztapalapa, Mexico 2025',
-    '2nd Place, National Math Olympiad ONMB 2024',
-    '3rd Place, National Academic Festival DGTI 2023',
-    '4th Place, National Math Olympiad ONMAPS 2021',
+    {
+        place: 'Scholarship',
+        title: 'Líderes del Mañana — Full Scholarship',
+        meta: 'ITESM · 11th generation',
+    },
+    {
+        place: '1st',
+        title: 'RoboCup@Home · Mexican Robotics Tournament (TMR)',
+        meta: 'Puebla, Mexico · 2026',
+    },
+    {
+        place: '9th',
+        title: 'RoboCup@Home · World Championship',
+        meta: 'Incheon, South Korea · 2026',
+    },
+    {
+        place: '2nd',
+        title: 'RoboCupJr@RescueMaze · Mexican Robotics Tournament (TMR)',
+        meta: 'Mexico City · 2025',
+    },
+    {
+        place: '3rd',
+        title: 'National Math Olympiad ONMB',
+        meta: 'Aguascalientes · 2024',
+    },
+    {
+        place: '2nd',
+        title: 'National Academic Festival DGTI',
+        meta: 'Pachuca · 2023',
+    },
+    {
+        place: '3rd',
+        title: 'National Math Olympiad ONMAPS',
+        meta: 'Remote · 2021',
+    },
 ];
 
 export const pSpokenLanguages = ['Spanish (Native)', 'English (C1)'];

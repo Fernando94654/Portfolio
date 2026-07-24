@@ -23,8 +23,7 @@ const Section: React.FC<SectionProps> = ({
     return (
         <section
             id={id}
-            // scroll-mt clears the fixed h-16 navbar when jumping to an anchor
-            className={`w-full scroll-mt-24 py-14 sm:py-20 font-code ${className}`}
+            className={`w-full scroll-mt-2 py-14 sm:py-20 font-code ${className}`}
         >
             <div className={SECTION_CONTAINER}>
                 {title && (
