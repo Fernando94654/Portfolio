@@ -1,14 +1,26 @@
 export const pExperience = [
     {
-        img: '/assets/Experience/Home.jpg',
+        img: '/assets/Experience/Home2.jpg',
         title: 'RoboCup @Home',
         description: [
-            'Member of the computer vision and robotic manipulation teams in RoBorregos',
-            'Optimized point clouds for 3D perception, reducing total points by 90% while enhancing resolution in key areas using ROS 2 and gazebo',
-            'Developing object detection modules using YOLO, OpenCV, ROS 2 and Docker',
-            'Optimizing Pipeline to train a YOLO model with image segmentation and DinoV2 model'
+            'Vision & Manipulation Lead, RoBorregos · May 2025 – Present',
+            '9th Place at RoboCup 2026 in Incheon, Korea and 1st Place at the Mexican Robotics Tournament 2026',
+            'Engineered an ML pipeline with FastAPI and Docker automating dataset labeling with Grounding DINO + SAM, synthetic dataset generation, and multi-GPU YOLO training from a web UI',
+            'Designed a computer vision architecture with Docker, gRPC and ROS2, integrating face recognition, pose estimation, object detection, and Moondream modules for real-time robot tasks',
+            'Developed an adaptive grasp-pose estimator from ZED2 point clouds for a MoveIt/ROS2 pipeline',
         ],
         gitRepo: 'https://github.com/RoBorregos/home2',
+    },
+    {
+        img: '/assets/Experience/SmartParking.jpg',
+        title: 'Smart Parking IoT',
+        description: [
+            'Software Developer for the ITESM “Expo Ingenierías” · Sep 2025 – Dec 2025',
+            'Implemented a smart-parking system with automatic license plate recognition in Python and FastAPI',
+            'Integrated ESP32 and ESP32-CAM sensors with a Node.js server over MQTT, persisting data to PostgreSQL via Prisma',
+            'Built a real-time dashboard to monitor parking availability and live sensor data',
+        ],
+        gitRepo: 'https://github.com/Fernando94654/Smart-Parking-IoT',
     },
     {
         img: '/assets/Experience/HackMTY.jpg',
@@ -22,23 +34,33 @@ export const pExperience = [
         gitRepo: 'https://github.com/biweep863/hackmty2025',
     },
     {
+        img: '/assets/Experience/candidatesDash.png',
+        title: 'Candidates Dashboard',
+        description: [
+            'Full-Stack Developer for RoBorregos Web Projects · May 2025 – Present',
+            'Created a T3 Stack platform to manage the team’s annual recruiting competition for 100+ participants and staff',
+            'Featured a live scoreboard, automated round scheduling, and a judging system',
+            'Built with TypeScript, React, Tailwind, Next.js, tRPC and Prisma over PostgreSQL',
+        ],
+    },
+    {
         img: '/assets/Experience/Dash-tec.png',
         title: 'Dashboard-Tec',
         description: [
             'Full stack developer for a community web platform to discover and share events at ITESM',
-            'Developing the event submission, calendar and admin pages using Prisma, managing both MySQL and PostgreSQL databases',
-            'Developing backend services with tRPC and user authentication',
+            'Developed the event submission, calendar and admin pages using Prisma over PostgreSQL',
+            'Developed backend services with tRPC and user authentication',
             'Built the frontend using TypeScript, React, Tailwind, and Next.js',
-            '(In development)',
         ],
     },
     {
         img: '/assets/Experience/swe-training.png',
         title: 'SWE Training by RoBorregos',
         description: [
-            'Frontend Developer for a web platform to manage LeetCode weekly problems, resources, and leaderboard rankings.',
-            'Development using TypeScript, React, Tailwind, Next.js;',
-            'Provided a platform with 650+ solved problems, helping 35+ students strengthen technical skills for their professional growth.',
+            'Full-Stack Developer for a platform managing LeetCode resources and leaderboards',
+            'Launched with the T3 Stack, handling weekly problems, resources and leaderboard rankings',
+            'Developed using TypeScript, React, Tailwind and Next.js',
+            'Supported 35+ students in solving 650+ technical problems, strengthening their skills for professional growth',
         ],
         gitRepo: 'https://github.com/RoBorregos/swe-training',
         pageLink: 'https://swe-training.roborregos.com/',
@@ -47,12 +69,11 @@ export const pExperience = [
         img: '/assets/Experience/Maze.jpg',
         title: 'RoboCup Jr. Rescue Maze',
         description: [
-            'Developed an autonomous robot for navigating a maze and deploying rescue kits',
-            'Achieved 1st place at regional competition and 2nd place at the Robotics Mexican Tournament representing RoBorregos;',
-            'Developed a computer vision system to detect victims using a TensorFlow model and OpenCV in Python;',
-            'Developed an autonomous control and navigation system, implementing PID controllers in C++ with PlatformIO;',
-            'Implemented a serial communication protocol between a Jetson Nano and an ESP32 to transmit TensorFlow model detection results;',
-            'Led the project as team captain, coordinating development and competition.',
+            'Team Captain, RoBorregos · Nov 2024 – May 2025',
+            'Achieved 1st place at Regionals and 2nd place at the Mexican Robotics Tournament',
+            'Developed a TensorFlow vision pipeline for victim detection on a Jetson Nano, with an ESP32 communication system',
+            'Architected an autonomous navigation system in C++ using PID control and DFS/Dijkstra path planning',
+            'Led the project as team captain, coordinating development and competition',
         ],
         gitRepo: 'https://github.com/RoBorregos/robocup-rescuemaze-2025',
     },
@@ -70,23 +91,24 @@ export const pExperience = [
 
 export const pWorkExperience = [
     {
-        img: '/assets/Experience/epicor.png',
+        img: '/assets/Experience/Epicor.jpg',
         title: 'Epicor Software',
         description: [
-            'Software Engineering Intern',
-            'Started a SWE internship within the Eclipse ERP development team at Epicor',
-            'Working on Java-based Solar Eclipse development and web migration using Angular',
-            'Developing and integrating AI-driven features through a Python-based backend into Epicor products.',
+            'Software Engineering Intern · Dec 2025 – Jun 2026',
+            'Contributed to Prism, Epicor’s new multi-agent AI assistant for the Eclipse ERP, presented as a beta at the company’s international Insights conference',
+            'Built Python sub-agents for inventory queries, business summaries, and Solar ERP UI actions, using OpenAI calls',
+            'Created C#/.NET endpoints exposing ERP data and business logic as agent tools',
+            'Integrated the Angular chatbot UI into the Java-based Solar ERP application',
         ],
     },
     {
         img: '/assets/Experience/Oasis.jpg',
         title: 'distritotec',
         description: [
-            'Software Engineering Intern',
-            'Developing an end-to-end pipeline for crowd estimation and person registration at ITESM’s Central Park using YOLO and ByteTrack for multi-object tracking',
-            'Architected a PyTorch classification model utilizing ResNet18 and Attention Pooling to extract temporal embeddings for child vs. adult inference via an MLP',
-            'Building scalable backend services using PostgreSQL, PostGIS, and Docker within a microservices architecture deployed on Azure cloud infrastructure',
+            'Software Engineering Intern · Aug 2025 – Feb 2026',
+            'Engineered an end-to-end pipeline tracking 500+ people/day for crowd estimation and person registration at ITESM’s Central Park, using YOLO and ByteTrack for multi-object tracking',
+            'Trained a PyTorch classification model using ResNet18 and Attention Pooling to extract temporal embeddings for child vs. adult inference via an MLP, achieving 90% accuracy',
+            'Built scalable backend services using PostgreSQL, PostGIS, and Docker within a microservices architecture deployed on Azure cloud infrastructure',
         ],
     },
 ];

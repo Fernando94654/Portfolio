@@ -5,8 +5,7 @@ export type Section = { name: string; href: string };
 
 const NavBar = () => {
     const sections = [
-        { name: 'Languages', href: '#Languages' },
-        { name: 'Technologies', href: '#Technologies' },
+        { name: 'About', href: '#About' },
         { name: 'Work Experience', href: '#Work Experience' },
         { name: 'Projects', href: '#Projects' },
         { name: 'Contact', href: '#Contact' },

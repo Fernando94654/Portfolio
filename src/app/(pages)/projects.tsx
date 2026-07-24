@@ -1,6 +1,7 @@
 'use client';
 import { pExperience } from '~/app/(pages)/hooks/useExperience';
 import ExpElement from '../_components/Experience/expElement';
+import Section from '../_components/Layout/section';
 import Title from '../_components/Title/Title';
 import { useEffect, useRef, useState } from 'react';
 
@@ -32,7 +33,7 @@ const Projects = () => {
                     setExp(index);
                     if (mobile) setMenuOpen(false);
                 }}
-                className={`w-full h-auto py-4  ${index === expState ? 'bg-slate-700' : 'hover:text-blue-800'}`}
+                className={`w-full h-auto shrink-0 py-4  ${index === expState ? 'bg-slate-700' : 'hover:text-blue-800'}`}
             >
                 <Title level={4} center={true} className="m-0 text-base">
                     {pr.title}
@@ -41,12 +42,8 @@ const Projects = () => {
         ));
 
     return (
-        <section
-            id="Projects"
-            className="lg:h-[32rem] my-20 font-code lg:px-28 px-3"
-        >
-            <Title level={2}>Projects</Title>
-            <div className="flex w-full h-8 rounded-md lg:hidden bg-slate-950 my-2 items-center justify-center">
+        <Section id="Projects" title="Projects">
+            <div className="flex w-full h-8 rounded-md lg:hidden bg-slate-950 mb-3 items-center justify-center">
                 <button
                     className="font-semibold hover:scale-105 hover:text-blue-800"
                     onClick={() => setMenuOpen(!menuOpen)}
@@ -62,8 +59,8 @@ const Projects = () => {
                     {getProyectsButtons(true)}
                 </div>
             )}
-            <div className="flex w-full h-full justify-center">
-                <div className="hidden lg:flex flex-col items-center justify-center bg-slate-950 gap-1 w-56 mr-10 rounded-md text-lg font-semibold ">
+            <div className="flex w-full justify-center">
+                <div className="hidden lg:flex flex-col items-center bg-slate-950 gap-1 w-56 mr-10 h-[32rem] shrink-0 overflow-y-auto rounded-md text-lg font-semibold scrollbar scrollbar-thumb-slate-600 scrollbar-track-slate-800">
                     {getProyectsButtons(false)}
                 </div>
                 <div className="flex flex-1 w-full lg:w-11/12">
@@ -76,7 +73,7 @@ const Projects = () => {
                     />
                 </div>
             </div>
-        </section>
+        </Section>
     );
 };
 
